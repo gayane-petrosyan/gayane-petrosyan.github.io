@@ -26,6 +26,10 @@ Throughout the program, I have grown both personally and professionally. The cha
 ## Future Aspirations
 Looking ahead, I am excited to use my skills and knowledge in a professional setting. I aim to become a project manager in the tech industry, where I can use my technical expertise to lead innovative projects. The combination of technical and managerial skills I've developed will help me bridge the gap between technical teams and business goals, ensuring successful project outcomes.
 
+## ORIGINAL ARTIFACT
+
+[Original Artifact](https://drive.google.com/file/d/102HAAWJgH81jiXWNlsddrSV1kwkxbrbx/view?usp=sharing)
+
 ## Code Review
 
 [![Code Review Video](https://img.youtube.com/vi/ymVyOwzgTaw/0.jpg)](https://youtu.be/ymVyOwzgTaw)
