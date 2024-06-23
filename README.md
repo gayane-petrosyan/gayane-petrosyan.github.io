@@ -1,8 +1,8 @@
 # Professional Self-Assessment
 
-- [Milestone 1 Review](milestone1.md)
 - [Milestone 2 Review](milestone2.md)
 - [Milestone 3 Review](milestone3.md)
+- [Milestone 4 Review](milestone4.md)
 
 ## Introduction
 As I finish my journey through the Computer Science program, I look back on my capstone project and my overall experience with a sense of pride and growth. This professional self-assessment is the introduction to my portfolio, showing my skills, experiences, and future goals.
