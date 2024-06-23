@@ -1,0 +1,46 @@
+<div class="row">
+    <!-- Container for the form -->
+    <div class="col-12 col-md-8">
+      <!-- Heading for the login section -->
+      <h2>Login</h2>
+      <!-- Form element with an event binding for form submission -->
+      <form (ngSubmit)="onLoginSubmit(evt)">
+        <!-- Alert message displayed when there are form errors -->
+        <div role="alert" *ngIf="formErrors" class="alert alert-danger">{{ formError }}</div>
+        
+        <!-- Form group for the email input -->
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input 
+            type="email" 
+            class="form-control" 
+            id="email" 
+            name="email" 
+            placeholder="Enter email address" 
+            [(ngModel)]="credentials.email" <!-- Two-way data binding for email -->
+          >
+        </div>
+  
+        <!-- Form group for the password input -->
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input 
+            type="password" 
+            class="form-control" 
+            id="password" 
+            name="password" 
+            placeholder="e.g 12+ alphanumerics" 
+            [(ngModel)]="credentials.password" <!-- Two-way data binding for password -->
+          >
+        </div>
+  
+        <!-- Submit button for the form -->
+        <button 
+          type="submit" 
+          role="button" 
+          class="btn btn-primary">Sign In!
+        </button> 
+      </form>
+    </div>
+  </div>
+  

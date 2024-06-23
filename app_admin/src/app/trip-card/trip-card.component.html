@@ -1,0 +1,43 @@
+<!-- Card container with specified dimensions and margin -->
+<div class="card ml-4" style="width: 18rem; height: 50rem; margin-bottom: 3rem;">
+  
+  <!-- Card header displaying the trip name -->
+  <div class="card-header">{{ trip.name }}</div>
+  
+  <!-- Image of the trip -->
+  <img src="assets/images/{{ trip.image }}" alt="trip thumbnail" class="card-img-top">
+  
+  <!-- Card body containing trip details -->
+  <div class="card-body">
+    
+    <!-- Subtitle displaying the resort name -->
+    <h6 class="card-subtitle mb-2 text-muted">{{ trip.resort }}</h6>
+    
+    <!-- Paragraph displaying trip length and price per person, formatted as currency -->
+    <p class="card-subtitle mt-3 mb-3 text-muted">
+      {{ trip.length }} only {{ trip.perPerson | currency:'USD':true }} per person
+    </p>
+    
+    <!-- Trip description, allowing HTML content -->
+    <p class="card-text" [innerHTML]="trip.description"></p>
+    
+    <!-- Conditional buttons for logged-in users -->
+    <div *ngIf="isLoggedIn()">
+      
+      <!-- Edit button -->
+      <button (click)="editTrip(trip)" 
+        class="btn btn-info" 
+        style="margin-right: 1rem; width: 5rem">
+        Edit
+      </button>
+      
+      <!-- Delete button with custom styles -->
+      <button (click)="deleteTrip(trip)" 
+          class="btn btn-info" 
+          style="width: 5rem; background-color: #C60606; border-color: #C60606">
+          Delete
+      </button>
+      
+    </div>
+  </div>
+</div>
